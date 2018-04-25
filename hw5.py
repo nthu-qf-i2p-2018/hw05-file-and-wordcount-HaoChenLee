@@ -26,7 +26,7 @@ def main(filename):
             # "dream." => "dream"
             word = word.strip(string.punctuation)
             # check if word is not empty
-            if word.isalpha:
+            if word:
                 # append the word to "all_words" list
                 all_words.append(word)
 
@@ -57,4 +57,4 @@ def main(filename):
         pickle.dump(counter.most_common(), pkl_file)
 
 if __name__ == '__main__':
-    main("i_have_a_dream.txt")
+    main("Desktop/i_have_a_dream.txt")
